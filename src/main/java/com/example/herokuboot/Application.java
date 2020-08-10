@@ -22,8 +22,16 @@ public class Application {
     @Bean
     ApplicationRunner applicationRunner(GreetingRepository greetingRepository) {
         return args -> {
-            greetingRepository.save(new Greeting("hello"));
-            greetingRepository.save(new Greeting("hi"));
+            greetingRepository.save(new Greeting("Hello"));
+            greetingRepository.save(new Greeting("world"));
+            greetingRepository.save(new Greeting("this"));
+            greetingRepository.save(new Greeting("is"));
+            greetingRepository.save(new Greeting("my"));
+            greetingRepository.save(new Greeting("new"));
+            greetingRepository.save(new Greeting("app"));
+            greetingRepository.save(new Greeting("with"));
+            greetingRepository.save(new Greeting("Spring"));
+            greetingRepository.save(new Greeting("Boot"));
         };
     }
 }
@@ -37,7 +45,8 @@ class HelloController {
         return "Добро пожаловать на начальную страницу моего проекта!\n\n\n" +
                 "Целью данного проекта является, показать Вам, как моему будущему работодателю, " +
                 "полный стек изученных и используемых мной технологий.\n\n\n" +
-                "Создано на скорую руку, разработка продолжается...";
+                "Создано на скорую руку, разработка продолжается... " +
+                "Пройдите, пожалуйста по адресу: https://arutyun-web.herokuapp.com/greetings";
     }
 
     @GetMapping("/greetings")
