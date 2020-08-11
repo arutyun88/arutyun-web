@@ -14,12 +14,12 @@ public class GreetingController {
             Map<String, Object> model
     ) {
         model.put("name", name);
-        return "greeting";
+        return "greeting.html";
     }
 
     @GetMapping("/")
     public String main(Map<String, Object> model) {
         model.put("some", "Гость");
-        return "main";
+        return "main.html";
     }
 }
