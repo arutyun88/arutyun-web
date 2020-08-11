@@ -1,5 +1,5 @@
 Адрес размещения:\
-https://arutyun-web.herokuapp.com/\
+https://arutyun-web.herokuapp.com/
 \
 Стек использованных технологий:\
 Java\
